@@ -1,0 +1,26 @@
+# A custom style for Physical Review Publications
+
+# FONT
+font.family: serif
+font.serif: Times
+
+# LaTeX customizations. See http://wiki.scipy.org/Cookbook/Matplotlib/UsingTex
+text.usetex: True
+
+# AXES
+axes.labelsize: 8
+axes.titlesize: 10
+
+# TICKS
+xtick.labelsize: 8
+ytick.labelsize: 8
+
+# FIGURE
+figure.titlesize: 10
+
+# SAVING FIGURES
+# Reasons default transparency is good:
+# * it looks better placed on off-white backgrounds, e.g., presentations, web
+# * is not noticable in the publication, so why not
+# * it is easier to go from transparent to white background than vice versa
+savefig.transparent: True
