@@ -73,10 +73,10 @@ def set_size(fig=None, w='narrow', aspect=None, h=None, tight=True):
     if w not in ['narrow', 'medium', 'wide']:
         raise ValueError('w must be "narrow", "medium", or "wide"')
 
-    widths_inches = {'narrow': 3.4, 'medium': 5.5, 'wide': 7.0}
+    sizes = {'narrow': 3.4, 'medium': 5.5, 'wide': 7.0}
     aspect_dict = {'narrow': 1, 'medium': 1/2, 'wide': 1/2}
 
-    width = widths_inches[w]
+    width = sizes[w]
     if aspect is None:
         aspect = aspect_dict[w]
     height = aspect * width
