@@ -2,8 +2,8 @@ from distutils.core import setup
 
 setup(
     name='rrplot',
-    # packages=['rrplot'],
-    py_modules=['rrplot'],
+    packages=['rrplot'],
+    # py_modules=['rrplot'],
     version='0.1',
     description='A python plotting library for reproducible research.',
     author='Jordan Melendez',
@@ -22,5 +22,6 @@ setup(
         'Topic :: Scientific/Engineering',
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Physics'
-        ]
+        ],
+    include_package_data=True,  # Look in MANIFEST.in
 )
